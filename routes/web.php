@@ -16,5 +16,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $datas = ["CHARACTERS", "COMICS", "MOVIES", "TV", "GAMES", "COLLECTIBLES", "VIDEOS", "FANS", "NEWS", "SHOP"];
-    return view('home', compact("datas"));
-});
+    $comics = config('comics');
+    return view('home', compact("datas", "comics"));
+})->name('home');
+
+
+Route::get('/infos', function () {
+    $comics = config('comics');
+    return view('moreInfo', compact('comics'));
+})->name('moreInfo');
