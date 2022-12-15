@@ -1,5 +1,5 @@
 <header>
-    <div class="container-fluid">
+    <div class="container-fluid blues">
 
     </div>
     <div class="container-fluid d-flex align-items-center justify-content-center pt-2">
@@ -17,5 +17,8 @@
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-primary" type="submit">Search</button>
         </form>
+    </div>
+    <div class="container-fluid jumbotron">
+        <img class="jmb" src="{{ Vite::asset('resources/img/jumbotron.jpg') }}" alt="">
     </div>
 </header>

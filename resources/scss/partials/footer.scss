@@ -1,0 +1,51 @@
+.background-container {
+    background-color: rgba(0, 110, 255, 0.89);
+
+
+    .container {
+        color: rgba(0, 110, 255, 0.89);
+        ;
+        margin: 0 auto;
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+
+        }
+
+
+        li {
+            &:hover {
+                transform: scale(1.2);
+                transition: 2s;
+            }
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            justify-content: space-between;
+
+            img {
+
+                height: 60px;
+
+            }
+
+            span {
+                color: white;
+                padding-right: 3rem;
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+                padding-left: 1rem;
+
+            }
+        }
+    }
+}
